@@ -1,0 +1,496 @@
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+    
+    body {
+      line-height: 1.6;
+      color: #333;
+    }
+    
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+    .logo img{
+      width: 30%;
+      height: auto;
+}
+    
+    
+    
+    /* Header */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      background: white ;
+      color: black;
+    }
+    
+    header .nav-links {
+      display: flex;
+      gap: 20px;
+    }
+    
+    header .btn {
+      padding: 8px 16px;
+      background: #ff69b4;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+        /* Hero Section */
+    .hero {
+      text-align: center;
+      padding: 80px 20px;
+      background: #333333;
+      color: white;
+    }
+   .hero img {
+  width: 350px;
+  height: auto;
+  display: block;
+  margin: auto;
+}
+
+.btm {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background: #ff4fa3;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.hero p {
+  margin-bottom: 20px;
+}
+.hero span{
+  font-weight: bold;
+}
+.hero hr {
+  border: none;
+  border-top: 2px dashed #ff6600;
+  width: 80%;
+  margin: 40px auto 0;
+}
+.intro {
+  padding: 60px 40px;
+  background: #2f2f2f;
+  color: white;
+}
+
+.intro h2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.intro-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+.intro-text {
+  width: 40%;
+  line-height: 1.6;
+}
+
+.intro-image img {
+  width: 300px;
+  border-radius: 10px;
+}
+.services {
+  padding: 60px 40px;
+  text-align: center;
+  background:#2f2f2f;
+  color: white;
+}
+
+.service-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.service-box {
+  width: 250px;
+}
+
+.service-box img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.portfolio{
+  background: #2f2f2f;
+}
+.portfolio-container {
+  display: flex;
+  gap: 20px; /* space between images */
+  justify-content: space-between; /* evenly distributes the items */
+  flex-wrap: wrap; /* allows responsiveness on smaller screens */
+}
+
+.portfolio-item {
+  flex: 1 1 calc(25% - 15px); /* 4 items per row with spacing */
+}
+
+/* Portfolio Section Only */
+.portfolio img {
+  width: 100%;
+  height: 250px;   /* set the same height for all images */
+  object-fit: cover; /* keeps images from stretching */
+  border-radius: 8px; /* optional */
+  margin-top: 30px;
+}
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+
+#book-appointment {
+  padding: 60px 20px;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+#book-appointment h2 { font-size: 2em; margin-bottom: 30px; }
+#book-appointment p { font-size: 1em; margin-bottom: 40px; }
+
+#appointment-form {
+  max-width: 400px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#appointment-form input[type="text"],
+#appointment-form input[type="date"] {
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  font-size: 1em;
+}
+
+#whatsapp-button {
+  display: inline-block;
+  text-decoration: none;
+  background-color: #25D366;
+  color: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  font-size: 1.1em;
+  font-weight: bold;
+  text-align: center;
+  transition: opacity 0.3s;
+  opacity: 0.6;
+  pointer-events: none; /* initially disabled */
+}
+
+#whatsapp-button.active {
+  pointer-events: auto;
+  opacity: 1;
+}
+
+#whatsapp-button:hover { background-color: #1ebe5d; }
+/* Footer Styling */
+#footer {
+  background-color: #000;
+  color: #fff;
+  padding: 50px 20px 20px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-section {
+  flex: 1 1 250px;
+}
+
+.footer-section h3,
+.footer-section h4 {
+  margin-bottom: 15px;
+  color: #fff;
+}
+
+.footer-section p,
+.footer-section li {
+  font-size: 0.95em;
+  color: #ccc;
+  line-height: 1.5em;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 8px;
+}
+
+.footer-section ul li a {
+  text-decoration: none;
+  color: #ccc;
+  transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+  color: #25D366; /* WhatsApp green highlight */
+}
+
+/* Footer Bottom */
+.footer-bottom {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 0.9em;
+  color: black;
+  border-top: 1px solid #333;
+  padding-top: 20px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-section {
+    text-align: center;
+  }
+}
+/* Contact Info Section */
+#contact-info {
+  padding: 60px 20px;
+  background-color: #111;
+  color: #fff;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+#contact-info h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+#contact-info p {
+  font-size: 1em;
+  margin-bottom: 40px;
+  color: #ccc;
+}
+
+/* Cards Layout */
+.contact-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.contact-card {
+  background-color: #000;
+  padding: 25px;
+  border-radius: 12px;
+  min-width: 200px;
+  flex: 1 1 200px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.contact-card h4 {
+  margin-bottom: 10px;
+  color: #25D366; /* WhatsApp green accent */
+}
+
+.contact-card p {
+  color: #ccc;
+  font-size: 0.95em;
+  line-height: 1.5em;
+}
+
+/* Social Links */
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.social-links a {
+  text-decoration: none;
+  color: #ccc;
+  font-weight: bold;
+  font-size: 1em;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.social-links a:hover {
+  color: #25D366; /* WhatsApp green accent for hover */
+  transform: scale(1.1);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .contact-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact-card {
+    width: 80%;
+    text-align: center;
+  }
+  .social-links {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+/* ------------------ Responsive Adjustments ------------------ */
+
+/* Phone: up to 767px */
+@media (max-width: 767px) {
+  /* Intro Section */
+  .intro-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .intro-text, .intro-image {
+    width: 90%;
+    text-align: center;
+  }
+  .intro-image img {
+    width: 80%;
+    height: auto;
+  }
+
+  /* Services Section */
+  .service-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .service-box {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+
+  /* Portfolio Section */
+  .portfolio-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .portfolio-item {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+
+  /* Hero Section Image */
+  .hero img {
+    width: 80%;
+    height: auto;
+  }
+
+  /* Appointment Form */
+  #appointment-form {
+    width: 90%;
+  }
+}
+
+/* Tablet: 768px – 991px */
+@media (min-width: 768px) and (max-width: 991px) {
+  /* Intro Section */
+  .intro-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .intro-text, .intro-image {
+    width: 45%;
+    text-align: center;
+  }
+  .intro-image img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Services Section */
+  .service-container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .service-box {
+    width: 45%;
+    margin-bottom: 20px;
+  }
+
+  /* Portfolio Section */
+  .portfolio-container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .portfolio-item {
+    flex: 1 1 45%;
+    margin-bottom: 20px;
+  }
+
+  /* Hero Section Image */
+  .hero img {
+    width: 60%;
+    height: auto;
+  }
+}
+
+/* Desktop: 992px and above */
+@media (min-width: 992px) {
+  /* Intro Section */
+  .intro-container {
+    flex-direction: row;
+    justify-content: center;
+  }
+  .intro-text {
+    width: 40%;
+  }
+  .intro-image {
+    width: 40%;
+  }
+
+  /* Services Section */
+  .service-container {
+    flex-direction: row;
+    justify-content: center;
+  }
+  .service-box {
+    width: 250px;
+  }
+
+  /* Portfolio Section */
+  .portfolio-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .portfolio-item {
+    flex: 1 1 calc(25% - 15px);
+  }
+
+  /* Hero Section Image */
+  .hero img {
+    width: 350px;
+    height: auto;
+  }
+}

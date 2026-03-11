@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="normally.css">
+  <title></title>
+</head>
+
+<body>
+<!-- Header -->
+<header>
+  <div class="logo">
+  </div>
+  <nav class="nav-links">
+    <a href="normally.html">Home</a>
+    <a href="service.html">Service</a>
+    <a href="con">Contact </a>
+    <a href="about.html">About </a>
+    <button class="btn">Get Started</button>
+  </nav>
+</header>
+  <!-- Hero Section -->
+  <section class="hero">
+  
+  <h1>Quality Hair Dressing Equipment for Experts</h1>
+  
+  <p>
+    Discover high-quality hair dressing equipment designed for professional stylists.
+    We provide reliable tools that help you deliver perfect results for every client.
+  </p>
+  
+  <img src="cut.jpg" alt="Hair dressing">
+  
+  <br>
+  
+  <a href="service.html" class="btm"> view service </a>
+  
+</section>
+<section class="intro">
+  
+  <h2>Why Choose Our Hair Dressing Equipment?</h2>
+  
+  <div class="intro-container">
+    
+    <div class="intro-text">
+      <p>
+        We provide high-quality hair dressing equipment that helps professionals achieve precision and style.
+        Our tools are durable, reliable, and designed for modern salons.
+        Our mission is to empower every stylist with the right equipment for success.
+      </p>
+    </div>
+    <div class="intro-image">
+      <img src="inused.jpeg" alt="Hair styling">
+    </div>
+  </div>
+</section>
+<section class="services">
+  
+  <h2>Our Services</h2>
+  
+  <div class="service-container">
+    
+    <div class="service-box">
+      <img src="first.jpeg" alt="Braided Hairstyles">
+      <h3>Braided Hairstyles</h3>
+      <p>Stylish braids for a neat and elegant look.</p>
+    </div>
+    
+    <div class="service-box">
+      <img src="second.jpeg" alt="Cornrow Styling">
+      <h3>Cornrow Styling</h3>
+      <p>Clean and well-patterned cornrows.</p>
+    </div>
+    <div class="service-box">
+      <img src="putam~2.jpg" alt="Hair Styling">
+      <h3>Hair Styling</h3>
+      <p>Modern styles for a fresh appearance.</p>
+    </div>
+    <div class="service-box">
+<img src="asabi.jpeg">
+<h3>Nail fixing</h3>
+<p class="desc">Elegant glossy nail finish</p>
+  </div>
+  <div class="service-box">
+  <img src="fiiled.jpeg">
+  <h3>Clean and neat nail fixing</h3>
+  <p class="desc">Clean and stylish nail set</p>
+  </div>
+  <div class="service-box">
+  <img src="past.jpeg">
+  <h3>Different style plating </h3>
+  <p class="desc">well styled and clean </p>
+  </div>
+    <div class="service-box">
+    <img src="eye.jpeg">
+    <h3> fixing eye lasheses</h3>
+    <p class="desc">well placed eye lashes without error</p>
+    </div>
+  <div class="service-box">
+    <img src="eye5.jpeg">
+    <h3>Well fixed and ever lasting</h3>
+    <p class="desc">place correctly </p>
+</section>
+<section class="portfolio">
+  <div class="portfolio-container">
+    <div class="portfolio-item"><img src="put 1.jpg" alt="Portfolio 1"></div>
+    <div class="portfolio-item"><img src="put 2.jpg" alt="Portfolio 2"></div>
+    <div class="portfolio-item"><img src="in 1 .jpg" alt="Portfolio 3"></div>
+    <div class="portfolio-item"><img src="in 2.jpg" alt="Portfolio 4"></div>
+  </div>
+</section>
+    
+    
+<section style="text-align:center; padding:60px 20px; background:#333333;color: white; border-color: white  ;">
+  
+  <h2 style="margin-bottom:40px;">What Clients Say</h2>
+  
+  <div style="display:flex; justify-content:center; gap:20px; flex-wrap:wrap;">
+    
+    <div class="testimonial-card" style="background:white; padding:25px; border-radius:12px; width:250px; box-shadow:0 4px 8px rgba(0,0,0,0.1);">
+      <h3 style="font-size:1.1em; margin-bottom:10px;">Emeka Nwankwo</h3>
+      <p style="font-size:0.95em; color:#555;">“They delivered exactly what I wanted. Truly reliable service.”</p>
+    </div>
+    
+    <div class="testimonial-card" style="background:white; padding:25px; border-radius:12px; width:250px; box-shadow:0 4px 8px rgba(0,0,0,0.1);">
+      <h3 style="font-size:1.1em; margin-bottom:10px;">Ada Okafor</h3>
+      <p style="font-size:0.95em; color:#555;">“Amazing hair styling and very professional service.”</p>
+    </div>
+    
+    <div class="testimonial-card" style="background:white; padding:25px; border-radius:12px; width:250px; box-shadow:0 4px 8px rgba(0,0,0,0.1);">
+      <h3 style="font-size:1.1em; margin-bottom:10px;">Tunde Balogun</h3>
+      <p style="font-size:0.95em; color:#555;">“Best salon experience I have had. Highly recommended.”</p>
+    </div>
+    
+  </div>
+  
+</section>
+<section id="book-appointment">
+  <h2>Book Your Appointment</h2>
+  <p>Fill in your details and we’ll get back to you quickly.</p>
+  
+  <form id="appointment-form">
+    <input type="text" id="name" name="name" placeholder="Your Name" required>
+    <input type="date" id="date" name="date" required>
+    <a id="whatsapp-button" href="#" target="_blank">Book on WhatsApp</a>
+  </form>
+</section>
+<script>
+  const nameInput = document.getElementById('name');
+  const dateInput = document.getElementById('date');
+  const whatsappButton = document.getElementById('whatsapp-button');
+  const phoneNumber = "+2347058059109"; // replace with your number
+  
+  // Enable button when name is filled
+  function updateButtonState() {
+    if (nameInput.value.trim() !== "") {
+      whatsappButton.classList.add('active');
+    } else {
+      whatsappButton.classList.remove('active');
+    }
+  }
+  
+  // Send WhatsApp message with name & date
+  function sendWhatsAppMessage(event) {
+    event.preventDefault();
+    if (nameInput.value.trim() === "") return;
+    
+    const name = encodeURIComponent(nameInput.value.trim());
+    const date = encodeURIComponent(dateInput.value || "Not specified");
+    const message = `Hello, my name is ${name} and I want to book an appointment on ${date}.`;
+    
+    const url = `https://wa.me/${phoneNumber}?text=${message}`;
+    window.open(url, "_blank");
+  }
+  
+  // Listeners
+  nameInput.addEventListener('input', updateButtonState);
+  dateInput.addEventListener('input', updateButtonState);
+  whatsappButton.addEventListener('click', sendWhatsAppMessage);
+</script>
+<footer id="footer">
+  <div class="footer-container">
+    <!-- About / Brand -->
+    <div class="footer-section">
+      <h3>Elegant Hair Studio</h3>
+      <p>Providing professional hair services across Nigeria. Your satisfaction is our priority.</p>
+    </div>
+    
+    <!-- Quick Links -->
+    <div class="footer-section">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#book-appointment">Book Appointment</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+    
+    <!-- Contact Info -->
+    <div class="footer-section">
+      <h4>Contact Us</h4>
+      <p>Email: mobolajiferanmi0@gmail.com</p>
+      <p>Phone: +2347058059109</p>
+      <p>Lagos, Nigeria</p>
+        <div class="social-links">
+    <a href="https://instagram.com/" target="_blank" class="social-icon">Instagram</a>
+    <a href="https://facebook.com/" target="_blank" class="social-icon">Facebook</a>
+    <a href="https://twitter.com/" target="_blank" class="social-icon">Twitter</a>
+  </div>
+    </div>
+    
+  </div>
+  
+  <div class="footer-bottom">
+    <p>&copy; 2026 Elegant Hair Studio. All rights reserved.</p>
+  </div>
+</footer>
+</body>
+
+</html>
